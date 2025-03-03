@@ -1,4 +1,4 @@
-package ru.akhitev;
+package ru.azotchenko;
 
 /**
  * Hello world!
