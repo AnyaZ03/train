@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class OpenQuestionCardTest {
 
+    private static final Long CARD_ID = 134L;
     private static final String CARD_QUESTION = "Что представляет собой интерфейс в Java?";
 
     private static final String CARD_EXPECTED_ANSWER = "Абстрактный тип, определяющий набор методов, которые должны быть реализованы классом.";
@@ -16,7 +17,12 @@ public class OpenQuestionCardTest {
 
     @BeforeEach
     void setUp() {
-        openQuestionCard = new OpenQuestionCard(CARD_QUESTION, CARD_EXPECTED_ANSWER);
+        openQuestionCard = new OpenQuestionCard(CARD_ID, CARD_QUESTION, CARD_EXPECTED_ANSWER);
+    }
+    @Test
+    @DisplayName("Создание OpenQuestionCard с id равным null выбрасывает исключение")
+    void having_nullId_when_newOpenQuestionCard_then_exceptionThrown() {
+        Assertions.assertThrowsExactly(IllegalArgumentException.class, () -> new OpenQuestionCard(null,CARD_QUESTION, CARD_EXPECTED_ANSWER));
     }
 
     @Test
@@ -28,25 +34,25 @@ public class OpenQuestionCardTest {
     @Test
     @DisplayName("Попытка создать OpenQuestionCard с question равным null вызывает исключение")
     void given_nullQuestion_when_creatingOpenQuestionCard_then_exceptionIsThrown() {
-        Assertions.assertThrowsExactly(IllegalArgumentException.class, () -> new OpenQuestionCard(null, CARD_EXPECTED_ANSWER));
+        Assertions.assertThrowsExactly(IllegalArgumentException.class, () -> new OpenQuestionCard(CARD_ID,null, CARD_EXPECTED_ANSWER));
     }
 
     @Test
     @DisplayName("Попытка создать OpenQuestionCard с ожидаемым ответом равным null вызывает исключение")
     void given_nullExpectedAnswer_when_creatingOpenQuestionCard_then_exceptionIsThrown() {
-        Assertions.assertThrowsExactly(IllegalArgumentException.class, () -> new OpenQuestionCard(CARD_QUESTION, null));
+        Assertions.assertThrowsExactly(IllegalArgumentException.class, () -> new OpenQuestionCard(CARD_ID,CARD_QUESTION, null));
     }
 
     @Test
     @DisplayName("Попытка создать OpenQuestionCard с пустым вопросом вызывает исключение")
     void given_emptyQuestion_when_creatingOpenQuestionCard_then_exceptionIsThrown() {
-        Assertions.assertThrowsExactly(IllegalArgumentException.class, () -> new OpenQuestionCard("", CARD_EXPECTED_ANSWER));
+        Assertions.assertThrowsExactly(IllegalArgumentException.class, () -> new OpenQuestionCard(CARD_ID,"", CARD_EXPECTED_ANSWER));
     }
 
     @Test
     @DisplayName("Попытка создать OpenQuestionCard с пустым ожидаемым ответом вызывает исключение")
     void given_emptyExpectedAnswer_when_creatingOpenQuestionCard_then_exceptionIsThrown() {
-        Assertions.assertThrowsExactly(IllegalArgumentException.class, () -> new OpenQuestionCard(CARD_QUESTION, ""));
+        Assertions.assertThrowsExactly(IllegalArgumentException.class, () -> new OpenQuestionCard(CARD_ID, CARD_QUESTION, ""));
     }
 
     @Test
