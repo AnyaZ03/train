@@ -7,14 +7,13 @@ public class OpenQuestionCard {
     private final String expectedAnswer;
 
     public OpenQuestionCard(Long id, String question, String expectedAnswer) {
-
-        if (question == null || question.trim().isEmpty()){
+        if (question == null || question.trim().isEmpty()) {
             throw new IllegalArgumentException("Значение поля question не должно быть пустым или null");
         }
-        if (expectedAnswer == null || expectedAnswer.trim().isEmpty()){
+        if (expectedAnswer == null || expectedAnswer.trim().isEmpty()) {
             throw new IllegalArgumentException("Значение поля expectedAnswer не должно быть пустым или null");
         }
-        if (id == null){
+        if (id == null) {
             throw new IllegalArgumentException("Значение поля id не должно быть null");
         }
         this.id = id;

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_db_jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_db_jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_db_spring_jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_db_spring_jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_in_memory_db/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_in_memory_db/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_ui_console/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_ui_console/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_ui_swing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_ui_swing/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
