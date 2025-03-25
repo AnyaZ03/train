@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ru.azotchenko</groupId>
+
   <artifactId>train</artifactId>
   <version>1.0</version>
   <packaging>pom</packaging>
@@ -29,6 +31,7 @@
     <h2.version>2.3.232</h2.version>
     <commons-dbcp2.version>2.13.0</commons-dbcp2.version>
   </properties>
+
 
   <dependencyManagement>
     <dependencies>
@@ -105,3 +108,4 @@
     </pluginManagement>
   </build>
 </project>
+
