@@ -1,12 +1,13 @@
 package ru.azotchenko.domain.model;
 
 public class OpenQuestionCard {
+    private final Long id;
 
     private final String question;
 
     private final String expectedAnswer;
 
-    public OpenQuestionCard(String question, String expectedAnswer) {
+    public OpenQuestionCard(Long id, String question, String expectedAnswer) {
         if (question == null || question.trim().isEmpty()){
             throw new IllegalArgumentException("Значение question не должно быть пустым или null");
         }
@@ -14,9 +15,17 @@ public class OpenQuestionCard {
         if (expectedAnswer == null || expectedAnswer.trim().isEmpty()){
             throw new IllegalArgumentException("Значение expectedAnswer не должно быть пустым или null");
         }
-
+        this.id = id;
         this.question = question;
         this.expectedAnswer = expectedAnswer;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getExpectedAnswer() {
+        return expectedAnswer;
     }
 
     public String getQuestion() {
