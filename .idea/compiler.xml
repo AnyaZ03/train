@@ -15,6 +15,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.6.3/mapstruct-processor-1.6.3.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.6.3/mapstruct-1.6.3.jar" />
         </processorPath>
+        <module name="train_http_client" />
         <module name="train_in_memory_db" />
         <module name="train_ui_console" />
         <module name="train_ui_swing" />
@@ -22,6 +23,7 @@
         <module name="train_db_spring_hibernate" />
         <module name="train_domain" />
         <module name="train_db_spring_jdbc" />
+        <module name="train_feign_client" />
         <module name="train_api" />
       </profile>
     </annotationProcessing>
@@ -33,6 +35,8 @@
       <module name="train_db_spring_hibernate" options="-parameters" />
       <module name="train_db_spring_jdbc" options="-parameters" />
       <module name="train_domain" options="-parameters" />
+      <module name="train_feign_client" options="-parameters" />
+      <module name="train_http_client" options="-parameters" />
       <module name="train_in_memory_db" options="-parameters" />
       <module name="train_ui_console" options="-parameters" />
       <module name="train_ui_swing" options="-parameters" />

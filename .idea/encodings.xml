@@ -13,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/train_db_spring_jdbc/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/train_domain/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/train_domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_feign_client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train_http_client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/train_in_memory_db/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/train_in_memory_db/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/train_ui_console/src/main/java" charset="UTF-8" />

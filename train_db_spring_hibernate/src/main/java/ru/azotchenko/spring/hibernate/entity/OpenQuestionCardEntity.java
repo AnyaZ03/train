@@ -6,26 +6,18 @@ import jakarta.persistence.*;
 @Table(name = "question")
 public class OpenQuestionCardEntity {
 
-
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "code")
-//    private Long code;
     @Id
     @Column
     private Long id;
+    @ManyToOne
+    @JoinColumn(name = "project_id")
+    private ProjectEntity project;
     @Column
     private String question;
 
     @Column
     private String expectedAnswer;
 
-//    public Long getCode() {
-//        return code;
-//    }
-
-//    public void setCode(Long code) {
-//        this.code = code;
-//    }
 
     public Long getId() {
         return id;
@@ -49,5 +41,12 @@ public class OpenQuestionCardEntity {
 
     public void setExpectedAnswer(String expectedAnswer) {
         this.expectedAnswer = expectedAnswer;
+    }
+    public ProjectEntity getProject() {
+        return project;
+    }
+
+    public void setProject(ProjectEntity project) {
+        this.project = project;
     }
 }
